@@ -35,8 +35,8 @@ ZMK_BEHAVIOR(ss_cw, tap_dance,
 // change esc to tab when holding alt
 // so that tab+esc key becomes alt+tab
 ZMK_BEHAVIOR(esc_tab, mod_morph,
-    bindings = <&kp ESC>, <&kp TAB>;
     mods = <(MOD_LALT|MOD_LCTRL|MOD_RCTRL)>;
+    bindings = <&kp ESC>, <&kp TAB>;
 )
 
 // tap: backspace | shift + tap: delete | hold: num layer
