@@ -72,37 +72,37 @@ ZMK_BEHAVIOR(esc_tab, mod_morph,
 
 ZMK_LAYER(default_layer,
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &esc_tab      &mt N1 Q      &mt N2 W      &mt N3 E      &mt N4 R      &mt N5 T          &mt N6 Y      &mt N7 U      &mt N8 I      &mt N9 O      &mt N0 P      &mt EQUAL MINUS
+          &esc_tab      &hrm N1 Q     &hrm N2 W     &hrm N3 E     &hrm N4 R     &hrm N5 T         &hrm N6 Y     &hrm N7 U      &hrm N8 I    &hrm N9 O     &hrm N0 P     &hrm EQUAL MINUS
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &ss_cw        &hrm LGUI A   &hrm LALT S   &hrm LCTRL D  &hrm LSHFT F  &kp G             &kp H         &hrm LSHFT J  &hrm LCTRL K  &hrm LALT L   &hrm LGUI SEMI &kp SQT
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp LCTRL     &kp Z         &kp X         &kp C         &kp V         &mt PLUS B        &mt ASTRK N   &kp M         &kp COMMA     &kp PERIOD   &kp SLASH      &kp BACKSLASH     
+          &kp LCTRL     &kp Z         &kp X         &kp C         &kp V         &hrm PLUS B       &hrm ASTRK N  &kp M         &kp COMMA     &kp PERIOD   &kp SLASH      &kp BACKSLASH     
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                    &mt LALT TAB  &lt SYS SPACE &tog NUM          &mo SMB       &kp RET       &kp BSPC    
+                                                    &mt LALT TAB  &lt SYS SPACE &to NUM          &mo SMB       &kp RET       &kp BSPC    
      //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
 ZMK_LAYER(number_layer,
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &esc_tab      &kp N1        &kp N2        &kp N3        &kp N4        &kp N5            &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        &mt EQUAL MINUS
+          &esc_tab      &kp N1        &kp N2        &kp N3        &kp N4        &kp N5            &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        &hrm EQUAL MINUS
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &ss_cw        &hrm LGUI A   &hrm LALT S   &hrm LCTRL D  &hrm LSHFT F  &kp G             &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp PERIOD    &kp SQT 
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp LCTRL     &kp Z         &kp X         &kp C         &kp V         &kp PLUS          &kp ASTRK      &none        &kp COMMA     &kp PERIOD    &kp SLASH    &kp BACKSLASH      
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                    &mt LALT TAB  &lt SYS SPACE &tog DEF          &mo SMB       &kp RET       &kp BSPC    
+                                                    &mt LALT TAB  &lt SYS SPACE &to DEF          &mo SMB       &kp RET       &kp BSPC    
      //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
 ZMK_LAYER(symbol_layer,
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &kp TILDE     &kp EXCL      &kp AT        &kp POUND     &kp DLLR      &kp PRCNT         &kp CARET     &kp AMPS      &kp ASTRK     &kp LPAR      &kp RPAR      &mt EQUAL MINUS
+          &kp TILDE     &kp EXCL      &kp AT        &kp POUND     &kp DLLR      &kp PRCNT         &kp CARET     &kp AMPS      &kp ASTRK     &kp LPAR      &kp RPAR      &hrm EQUAL MINUS
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &ss_cw        &kp PLUS      &kp MINUS     &kp LBRC      &kp LBKT      &kp LPAR          &kp RPAR      &kp RBKT      &kp RBRC      &kp ASTRK     &kp SLASH     &kp EQUAL
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp LCTRL     &none         &none         &none         &none         &kp PLUS          &kp ASTRK        &kp M      &kp COMMA     &kp PERIOD    &kp SLASH     &kp BACKSLASH     
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                    &mt LALT TAB  &lt SYS SPACE &tog  DEF         &tog DEF       &kp RET      &kp BSPC    
+                                                    &mt LALT TAB  &lt SYS SPACE &to  DEF         &to DEF       &kp RET      &kp BSPC    
      //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
@@ -116,6 +116,6 @@ ZMK_LAYER(system_layer,
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &bt BT_CLR    &bt BT_SEL 5  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1      &none         &kp N1        &kp N2        &kp N3        &kp EQUAL     &kp RET     
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                    &bootloader   &tog DEF      &tog DEF          &tog DEF      &kp N0        &kp PERIOD    
+                                                    &bootloader   &tog DEF      &to DEF          &to DEF      &kp N0        &kp PERIOD    
      //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
