@@ -97,9 +97,9 @@ ZMK_LAYER(num,
 
 ZMK_LAYER(smb,
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &kp TAB     &kp EXCL      &kp AT        &kp POUND     &kp DLLR      &kp PRCNT         &kp CARET     &kp AMPS      &kp ASTRK     &kp LPAR      &kp RPAR      &hrm EQUAL MINUS
+          &kp TAB     &kp EXCL      &kp AT        &kp POUND     &kp DLLR      &kp PRCNT         &kp CARET     &kp AMPS      &kp ASTRK     &kp LPAR      &kp RPAR      &kp EQUAL
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &ss_cw        &kp PLUS      &kp MINUS     &kp LBKT      &kp LBRC       &kp LPAR          &kp RPAR      &kp  RBRC        &kp RBKT     &kp ASTRK     &kp SLASH     &kp EQUAL
+          &ss_cw        &kp PLUS      &kp MINUS     &kp LBKT      &kp LBRC       &kp LPAR          &kp RPAR      &kp  RBRC        &kp RBKT     &kp ASTRK     &kp LBRC     &kp RBRC
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp LCTRL     &none         &none         &none         &kp EQUAL         &kp PLUS       &kp ASTRK     &kp EQUAL     &kp COMMA     &kp PERIOD    &kp SLASH     &kp BACKSLASH     
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
