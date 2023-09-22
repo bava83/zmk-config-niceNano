@@ -11,8 +11,8 @@
 #define ___ &trans
 
 #define DEF 0  // layer shortcuts, must match order in which they are defined below
-#define NUM 1
-#define SMB 2
+#define DIR 1
+#define NUM 2
 #define SYS 3
 
 /* custom behaviors */
@@ -73,37 +73,37 @@ ZMK_BEHAVIOR(esc_tab, mod_morph,
 
 ZMK_LAYER(def,
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &kp TAB     &hrm N1 Q     &hrm N2 W     &hrm N3 E     &hrm N4 R     &hrm N5 T         &hrm N6 Y     &hrm N7 U      &hrm N8 I    &hrm N9 O     &hrm N0 P     &hrm EQUAL MINUS
+          &kp TAB       &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O          &kp P        &hrm EQUAL MINUS
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &ss_cw        &hrm LGUI A   &hrm LALT S   &hrm LCTRL D  &hrm LSHFT F  &kp G             &kp H         &hrm LSHFT J  &hrm LCTRL K  &hrm LALT L   &hrm LGUI SEMI &kp SQT
+          &ss_cw        &hrm LGUI A   &hrm LALT S   &hrm LCTRL D  &hrm LSHFT F  &kp G             &kp H         &hrm LSHFT J  &hrm LCTRL K  &hrm LALT L  &hrm LGUI SEMI &kp SQT
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp LCTRL     &kp Z         &kp X         &kp C         &kp V         &hrm PLUS B       &hrm ASTRK N  &kp M         &kp COMMA     &kp PERIOD   &kp SLASH      &kp BACKSLASH     
+          &kp LCTRL     &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp PERIOD    &kp SLASH     &kp BACKSLASH     
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                    &hrm LALT ESC  &lt SYS SPACE &to NUM          &mo SMB       &kp RET       &kp BSPC    
+                                                    &hrm LALT ESC  &lt SYS SPACE &mo DIR          &mo NUM       &kp RET       &kp BSPC    
+     //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
+)
+
+ZMK_LAYER(dir,
+     // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+          &kp TAB       &kp N1        &kp N2        &kp N3        &kp N4        &kp N5            &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        &hrm EQUAL MINUS
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+          &ss_cw        &hrm LGUI A   &hrm LALT S   &hrm LCTRL D  &hrm LSHFT F  &kp G             &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp PERIOD    &kp SQT 
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+          &kp LCTRL     &kp Z         &kp X         &kp C         &kp V         &kp PLUS          &kp ASTRK     &kp EQUAL    &kp COMMA     &kp PERIOD    &kp SLASH      &to DIR      
+     // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                                                    &hrm LALT ESC  &lt SYS SPACE &to DEF          &mo NUM       &kp RET       &kp BSPC    
      //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
 ZMK_LAYER(num,
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &kp TAB      &kp N1        &kp N2        &kp N3        &kp N4        &kp N5            &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        &hrm EQUAL MINUS
+          &kp TAB       &kp EXCL      &kp AT        &kp POUND     &kp DLLR      &kp PRCNT         &kp CARET     &kp N7        &kp N8        &kp N9        &kp N0        &kp EQUAL
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &ss_cw        &hrm LGUI A   &hrm LALT S   &hrm LCTRL D  &hrm LSHFT F  &kp G             &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp SEMI    &kp SQT 
+          &ss_cw        &kp LBRC      &kp RBRC      &kp UP         &kp LPAR     &kp RPAR          &kp AMPS      &kp N4        &kp N5        &kp N6        &kp LBKT      &kp RBKT  
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp LCTRL     &kp Z         &kp X         &kp C         &kp V         &kp PLUS          &kp ASTRK      &kp EQUAL        &kp COMMA     &kp PERIOD    &kp SLASH    &kp BACKSLASH      
+          &kp LCTRL     &kp LGUI      &kp LEFT      &kp DOWN      &kp RIGHT     &kp PLUS          &kp ASTRK     &kp N1        &kp N2        &kp N3        &kp SLASH     &to NUM    
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                    &hrm LALT ESC  &lt SYS SPACE &to DEF          &mo SMB       &kp RET       &kp BSPC    
-     //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
-)
-
-ZMK_LAYER(smb,
-     // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &kp TAB     &kp EXCL      &kp AT        &kp POUND     &kp DLLR      &kp PRCNT         &kp CARET     &kp AMPS      &kp ASTRK     &kp LPAR      &kp RPAR      &kp EQUAL
-     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &ss_cw        &kp PLUS      &kp MINUS     &kp LBKT      &kp LBRC       &kp LPAR          &kp RPAR      &kp  RBRC        &kp RBKT     &kp ASTRK     &kp LBRC     &kp RBRC
-     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp LCTRL     &none         &none         &none         &kp EQUAL         &kp PLUS       &kp ASTRK     &kp EQUAL     &kp COMMA     &kp PERIOD    &kp SLASH     &kp BACKSLASH     
-     // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                    &hrm LALT ESC  &to SYS      &to  DEF         &to DEF       &kp RET      &kp BSPC    
+                                                    &hrm LALT ESC &lt SYS SPACE &mo DIR            &to DEF       &kp RET      &kp BSPC    
      //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
@@ -111,12 +111,12 @@ ZMK_LAYER(smb,
 //ok
 ZMK_LAYER(sys,
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6            &bootloader   &kp N7        &kp N8        &kp N9        &kp PLUS      &kp MINUS
+          &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6            &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12      
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12           &none        &hrm LSHFT N4 &hrm LCTRL N5 &hrm LALT N6  &hrm LGUI ASTRK &kp SLASH
+          &ss_cw        &bt BT_CLR    &none         &kp LA(F4)    &none         &none             &kp PG_UP     &none         &kp C_VOL_UP  &kp HOME      &kp PSCRN     &kp C_PP
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &bt BT_CLR    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0      &none         &kp N1        &kp N2        &kp N3        &kp EQUAL     &kp RET     
+          &kp LCTRL     &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0      &kp PG_DN     &kp DEL       &kp C_VOL_DN  &kp END        &none        &to SYS     
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                    &bootloader   &to DEF      &to DEF          &to DEF      &kp N0        &kp PERIOD    
+                                                    &bootloader   &kp LALT      &to DEF            &to DEF       &kp LALT      &bootloader   
      //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
